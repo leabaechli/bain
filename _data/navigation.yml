@@ -1,8 +1,12 @@
+---
+header:
+  image: /assets/images/titelbild.jpg
+---
+
 main:
   - title: "Posts"
     url: /posts/
   - title: "About"
     url: /about/
     
-header:
-  image: /assets/images/image-filename.jpg
+
