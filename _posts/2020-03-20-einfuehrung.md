@@ -2,7 +2,7 @@
 title: "Hallo erstmal..."
 date: 2020-09-10
 ---
-Dieses Modul ist bei mir in diesem Semester das einzige, das rein online stattfindet. Das finde ich auch passend, immerhin geht es hier um Informatik! Und ehrlich gesagt ist es mir auch recht, wenn ich ein bisschen weniger auf Zürich reisen muss. Dafür gönne ich mir jeweils eine Kanne Tee zum Unterricht und kann so gemütlich Tee-schlurfend von zuhause aus am Unterricht teilnehmen. So lässt es sich doch ~~~leben~~ lernen! 
+Dieses Modul ist bei mir in diesem Semester das einzige, das rein online stattfindet. Das finde ich auch passend, immerhin geht es hier um Informatik! Und ehrlich gesagt ist es mir auch recht, wenn ich ein bisschen weniger auf Zürich reisen muss. Dafür gönne ich mir jeweils eine Kanne Tee zum Unterricht und kann so gemütlich Tee-schlürfend von zuhause aus am Unterricht teilnehmen. So lässt es sich doch ~~leben~~ lernen! 
 
 #### Aber was kommt da eigentlich auf mich zu? 
 
