@@ -1,5 +1,7 @@
 ---
 title: Lerntagebuch
+header:
+  image: /assets/images/titelbild.jpg
 ---
 
 ## Herzlich willkommen zu meinem Lerntagebuch!
