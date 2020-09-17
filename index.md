@@ -12,6 +12,7 @@ Hier werde ich meine Erfahrungen im Kurs **Bibliotheks- und Archivinformatik** (
 
   * [Einleitung](_posts/2020-03-20-einfuehrung.md)
   * [Lektion I](_posts/2020-03-28-lektion1.md)
+  <!--
   * Lektion II
   * Lektion III
   * Lektion IV
@@ -21,5 +22,5 @@ Hier werde ich meine Erfahrungen im Kurs **Bibliotheks- und Archivinformatik** (
   * Lektion VIII
   * Lektion IX
   * Lektion X
-  * Abschluss
+  * Abschluss-->
 
