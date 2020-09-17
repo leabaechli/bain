@@ -10,16 +10,16 @@ Hier werde ich meine Erfahrungen im Kurs **Bibliotheks- und Archivinformatik** (
 
 ### Hier geht's zu den einzelnen Einträgen: 
 
-  *[Einleitung](_posts/2020-03-20-einfuehrung.md)
-  *[Lektion I](_posts/2020-03-28-lektion1.md)
-  *Lektion II
-  *Lektion III
-  *Lektion IV
-  *Lektion V
-  *Lektion VI
-  *Lektion VII
-  *Lektion VIII
-  *Lektion IX
-  *Lektion X
-  *Abschluss
+  * [Einleitung](_posts/2020-03-20-einfuehrung.md)
+  * [Lektion I](_posts/2020-03-28-lektion1.md)
+  * Lektion II
+  * Lektion III
+  * Lektion IV
+  * Lektion V
+  * Lektion VI
+  * Lektion VII
+  * Lektion VIII
+  * Lektion IX
+  * Lektion X
+  * Abschluss
 
