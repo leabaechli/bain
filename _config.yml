@@ -9,8 +9,8 @@ github_username:  leabaechli # DO NOT include the @ character, or else the build
 
 show_excerpts: true # set to false to remove excerpts on the homepage
 
-#ab hier sind die Einträge von dem Minimal-Mistake-Theme kopiert
-minimal_mistakes_skin: default
+#ab hier sind die Einträge von dem Minimal-Mistake-Theme kopiert; einzelne Anpassung habe ich vorgenommen
+minimal_mistakes_skin: contrast
 search: true
 
 
