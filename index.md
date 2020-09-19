@@ -1,6 +1,5 @@
 ---
 title: Lerntagebuch
-layout: splash
 header:
   image: /assets/images/titelbild.jpg
 ---
