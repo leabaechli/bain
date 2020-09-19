@@ -3,7 +3,7 @@ title: "Hallo erstmal..."
 date: 2020-09-10
 header:
   image: /assets/images/titelbild.jpg
-featured_img: /assets/images/INTRO.jpg
+  teaser: /assets/images/INTRO.jpg
 
   
 
