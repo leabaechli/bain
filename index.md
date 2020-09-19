@@ -6,7 +6,7 @@ header:
 
 ## Herzlich willkommen zu meinem Lerntagebuch!
 
-Hier werde ich meine Erfahrungen im Kurs **Bibliotheks- und Archivinformatik** (kurz: BAIN) festhalten. Let's get this ~~party~~ diary started!
+Hier werde ich meine Erfahrungen im Kurs **Bibliotheks- und Archivinformatik** (kurz: BAIN) festhalten. Let's get this diary started!
 
 ### Hier geht's zu den einzelnen Einträgen: 
 
