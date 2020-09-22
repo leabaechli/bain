@@ -31,7 +31,7 @@ Leerschlag zwischen # und H nicht vergessen!
 ### Listen und Aufzählungen
 
 * `*` = ungeordnete Liste, auch hier auf den Leerschlag achten, sonst kommen sich die *kursiv*-Asterisks und die Listen-Asterisks in die Quere
-2. `2.` = geordnete Liste -- wie man sieht, kommt es nicht darauf an, mit welcher Zahl die Liste anfängt... aber eine Zahl muss es schon sein
+2. `1.` = geordnete Liste -- wobei es nicht darauf ankommt, mit welcher Zahl die Liste anfängt
 
 Es gibt noch mehr Arten von Listen, ich nehme aber an, dass mir diese zwei Varianten genügen werden. Falls nicht, sind weitere Varianten [hier](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists) aufgeführt. 
 
@@ -39,7 +39,7 @@ Es gibt noch mehr Arten von Listen, ich nehme aber an, dass mir diese zwei Varia
 
 `[Bezeichnung](URL)`
 
-Mehr Arten von Links gibt es [hier](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
+Mehr Arten von Links gibt es [hier](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links).
 
 ### Bilder
 Es gibt zwei Wege, wie man Bilder darstellen kann: 
