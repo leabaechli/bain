@@ -6,7 +6,6 @@ header:
   image: /assets/images/....jpg
   teaser: "/assets/images/....jpg"
 ---
-## Markdown-Merkblatt
 
 Dies ist eine von mir für mich zusammengestellte Version der Markdown-Befehle, die ich wohl für diesen Blog am meisten nutzen werde (und dient auch gleich zur Übung). 
 Die Quelle sowie weiterführende Befehle sind [hier](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) zu finden. 
@@ -31,14 +30,24 @@ Leerschlag zwischen # und H nicht vergessen!
 
 ### Listen und Aufzählungen
 
+* `*` = ungeordnete Liste, auch hier auf den Leerschlag achten, sonst kommen sich die *kursiv*-Asterisks und die Listen-Asterisks in die Quere
+2. `2.` = geordnete Liste -- wie man sieht, kommt es nicht darauf an, mit welcher Zahl die Liste anfängt... aber eine Zahl muss es schon sein
+
+Es gibt noch mehr Arten von Listen, ich nehme aber an, dass mir diese zwei Varianten genügen werden. Falls nicht, sind weitere Varianten [hier](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists) aufgeführt. 
 
 ### Links
 
+`[Bezeichnung](URL)`
+
+Mehr Arten von Links gibt es [hier](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
+
+### Bilder
+Es gibt zwei Wege, wie man Bilder darstellen kann: 
+* im Fliesstext selbst, ähnlich wie ein Link `![Alternativtext](https://static.thenounproject.com/png/212328-200.png "Bild-Titel")` 
+* oder zuerst das Bild definieren `[eindeutige Variable für Bild]: https://static.thenounproject.com/png/212328-200.png "Bild-Titel"` und dann mit `![Alternativtext][eindeutige Variable für Bild]` aufrufen 
 
 ### Tabellen
 
-
-### Bilder
 
 
 
