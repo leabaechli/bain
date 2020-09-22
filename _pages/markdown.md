@@ -48,7 +48,19 @@ Es gibt zwei Wege, wie man Bilder darstellen kann:
 
 ### Tabellen
 
+```
+| Spalte 1    |  Spalte 2  |     Spalte 3 |
+| ----------- | :--------: | -----------: |
+| linksbündig |  zentriert | rechtsbündig |
 
+```
 
+Wichtig ist bei Tabellen vor allem, dass die erste Reihe immer von mindestens drei Bindestrichen von der nächsten Spalte getrennt ist. Die | sind optional, helfen aber sicherlich bei der Orientierung. Und die Spalten müssen im Code auch nicht gleich breit sein: Das zweite Beispiel unten ergibt die genau gleiche Tabelle wie das Beispiel oben. 
 
+```
+| Spalte 1 | Spalte 2 | Spalte 3 |
+| --- | :---: | ---: |
+| linksbündig | zentriert | rechtsbündig |
+```
 
+Die Spaltenbreite passt sich unabhängig von der Anzahl `-` immer am Inhalt an. 
