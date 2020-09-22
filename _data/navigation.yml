@@ -5,5 +5,7 @@ main:
     url: /posts/
   - title: "About"
     url: /about/
+  - title: "Markdown-Merkblatt"
+    url: /markdown/
     
 
