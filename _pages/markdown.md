@@ -1,5 +1,6 @@
 ---
 title: "Markdown-Merkblatt"
+permalink: /markdown/
 date: 2020-09-22
 header:
   image: /assets/images/....jpg
