@@ -2,7 +2,7 @@
 title: Lerntagebuch
 layout: splash
 header:
-  image: /assets/images/titelbild.jpg
+  image: /assets/images/BAIN-titel.png
 ---
 ## Herzlich willkommen zu meinem Lerntagebuch!
 
