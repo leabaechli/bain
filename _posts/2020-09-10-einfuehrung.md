@@ -2,8 +2,8 @@
 title: "Hallo erstmal..."
 date: 2020-09-10
 header:
-  image: /assets/images/INTRO.jpg
-  teaser: "/assets/images/INTRO.jpg"
+  image: /assets/images/BAIN-0.png
+  teaser: "/assets/images/BAIN-0.png"
 
   
 
