@@ -11,11 +11,11 @@ Hier werde ich meine Erfahrungen im Kurs **Bibliotheks- und Archivinformatik** (
 ### Hier geht's zu den einzelnen Einträgen: 
 
   * [Einleitung](_posts/2020-09-10-einfuehrung.md)
-  * [Lektion I](_posts/2020-09-10-lektion1.md)
-  * [Lektion II](_posts/2020-09-25-lektion2.md)
-  * [Lektion III](_posts/2020-10-02-lektion3.md)
-  * [Lektion IV](_posts/2020-10-09-lektion4.md)
-  * [Lektion V](_posts/2020-10-16-lektion5.md)
+  * [I: Technische Grundlagen](_posts/2020-09-10-lektion1.md)
+  * [II: Funktion und Aufbau von Bibliothekssystemen I](_posts/2020-09-25-lektion2.md)
+  * [III: Funktion und Aufbau von Bibliothekssystemen II](_posts/2020-10-02-lektion3.md)
+  * [IV: Funktion und Aufbau von Archivsystemen I](_posts/2020-10-09-lektion4.md)
+  * [V: Funktion und Aufbau von Archivsystemen II, Repository-Software](_posts/2020-10-16-lektion5.md)
   * Lektion VI
   * Lektion VII
   * Lektion VIII
