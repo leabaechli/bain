@@ -18,7 +18,7 @@ Hier werde ich meine Erfahrungen im Kurs **Bibliotheks- und Archivinformatik** (
   * [V: Funktion und Aufbau von Archivsystemen II, Repository-Software](_posts/2020-10-16-lektion5.md)
   * [VI: Metadaten modellieren und Schnittstellen nutzen I](_posts/2020-10-30-lektion6.md)
   * [VII: Metadaten modellieren und Schnittstellen nutzen II](_posts/2020-11-20-lektion7.md)
-  * Lektion VIII
+  * [VIII: Metadaten modellieren und Schnittstellen nutzen III, Suchmaschinen und Discovery-Systeme I](_posts/2020-11-27-lektion8.md)
   * Lektion IX
   * Lektion X
   * Abschluss
