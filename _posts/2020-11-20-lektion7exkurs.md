@@ -39,25 +39,13 @@ Dort haben wir z.B. für das 100er-Feld diese Angabe (als Bild, weil GitHub hier
 
 ![Template1](https://raw.githubusercontent.com/leabaechli/bain/master/assets/images/OR_100_1.png)
 
-```
-<datafield tag="100" ind1="0" ind2=" ">
-    <subfield code="a">{{cells['Authors'].value.split('|')[0].escape('xml')}}</subfield>
-</datafield>
-```
 
 Das muss aber jetzt noch mit den GND-Daten ergänzt werden. Meine beschränkten Katalogisierungskenntnisse kommen an ihre Grenzen, was gehört wohin? Die [Felddokumentation der LoC](https://www.loc.gov/marc/bibliographic/concise/bd100.html) verschafft Abhilfe - die GND-Nummer kommt ins Subfield 0, Lebensdaten ins Subfield d, nur beim Beruf bin ich etwas unsicher... ist das eventuell Subfield c ("Titles and words associated with a name")? Und der Geburtsort gehört nicht ins 100er-Feld, sondern ins Feld 370, weiss die [Felddokumentation](https://www.loc.gov/marc/authority/ad370.html). 
 
 Okay, versuchen wir's mal. Ich ergänze mein 100er Feld-Template und komme auf das: 
 
 ![Template neu](https://raw.githubusercontent.com/leabaechli/bain/master/assets/images/OR_100_2.png)
-```
-<datafield tag="100" ind1="0" ind2=" ">
-    <subfield code="a">{{cells['Authors'].value.split('|')[0].escape('xml')}}</subfield>
-    <subfield code="0">{{cells['GND-Nummer'].value. escape('xml')}}</subfield>
-    <subfield code="c">{{cells['Beruf- oder Beschäftigung'].value. escape('xml')}}</subfield>
-    <subfield code="d">{{cells['Geburts- und Sterbedatum'].value. escape('xml')}}</subfield>
-</datafield>
-```
+
 
 Mit dem 100er-Feld ist das ja nicht getan, denn das 700er-Feld gibt's ja auch noch. Leider funktioniert das hier nicht ganz so einfach. Ich bin froh, dass ich die Übung erst nach dem Unterricht machen konnte, denn ich glaube nicht, dass ich das geschafft hätte (oder ich hätte SEHR viele Nerven verloren...) Es braucht nämlich in den leeren Zellen der neuen Spalten (von denen es viele gibt) einen Platzhalter, wie bspw. `$`. Dann müssen die neuen Spalten zusammengeführt werden. Beide Schritte sind mit OpenRefine ja recht schnell gemacht. Und dann kann das Template ergänzt werden: 
 
