@@ -2,9 +2,6 @@
 title: "Markdown-Merkblatt"
 permalink: /markdown/
 date: 2020-09-22
-header:
-  image: /assets/images/....jpg
-  teaser: "/assets/images/....jpg"
 ---
 
 Dies ist eine von mir für mich zusammengestellte Version der Markdown-Befehle, die ich wohl für diesen Blog am meisten nutzen werde (und dient auch gleich zur Übung). 
