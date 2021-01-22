@@ -31,3 +31,104 @@ Ich habe mich für Berufsbezeichnung, Geburts- und Sterbedatum, Geburtstort sowi
 Daraufhin kann die Auswahl bestätigt werden, worauf die entsprechenden neuen Spalten zu der bestehenden Tabelle hinzugefügt und mit den GND-Daten befüllt werden. 
 
 ## Templating
+Jetzt kommt der zweite Teil dieser Aufgabe, nämlich das Tempate entsprechend zu erweitern und die Daten als XML-Datei zu exportieren. 
+
+Ich nehme das bereit in der Stunde erstellte [Grundtemplate](https://pad.gwdg.de/qeGjv6aPShOSg4BMJgOjkg?both#Gesamtergebnis-Row-Template), das schon einiges mit sich bringt. 
+
+Dort haben wir z.B. für das 100er-Feld diese Angabe: 
+
+```
+<datafield tag="100" ind1="0" ind2=" ">
+    <subfield code="a">{{cells['Authors'].value.split('|')[0].escape('xml')}}</subfield>
+</datafield>
+```
+
+Das muss aber jetzt noch mit den GND-Daten ergänzt werden. Meine beschränkten Katalogisierungskenntnisse kommen an ihre Grenzen, was gehört wohin? Die [Felddokumentation der LoC](https://www.loc.gov/marc/bibliographic/concise/bd100.html) verschafft Abhilfe - die GND-Nummer kommt ins Subfield 0, Lebensdaten ins Subfield d, nur beim Beruf bin ich etwas unsicher... ist das eventuell Subfield c ("Titles and words associated with a name")? Und der Geburtsort gehört nicht ins 100er-Feld, sondern ins Feld 370, weiss die [Felddokumentation](https://www.loc.gov/marc/authority/ad370.html). 
+
+Okay, versuchen wir's mal. Ich ergänze mein 100er Feld-Template und komme auf das: 
+
+```
+<datafield tag="100" ind1="0" ind2=" ">
+    <subfield code="a">{{cells['Authors'].value.split('|')[0].escape('xml')}}</subfield>
+    <subfield code="0">{{cells['GND-Nummer'].value. escape('xml')}}</subfield>
+    <subfield code="c">{{cells['Beruf- oder Beschäftigung'].value. escape('xml')}}</subfield>
+    <subfield code="d">{{cells['Geburts- und Sterbedatum'].value. escape('xml')}}</subfield>
+</datafield>
+```
+
+Mit dem 100er-Feld ist das ja nicht getan, denn das 700er-Feld gibt's ja auch noch. Leider funktioniert das hier nicht ganz so einfach. Ich bin froh, dass ich die Übung erst nach dem Unterricht machen konnte, denn ich glaube nicht, dass ich das geschafft hätte (oder ich hätte SEHR viele Nerven verloren...) Es braucht nämlich in den leeren Zellen der neuen Spalten (von denen es viele gibt) einen Platzhalter, wie bspw. `$`. Dann müssen die neuen Spalten zusammengeführt werden. Beide Schritte sind mit OpenRefine ja recht schnell gemacht. Und dann kann das Template ergänzt werden: 
+
+```
+forEachIndex(cells['Authors'].value.split('|').slice(1), i, v ,'
+<datafield tag="700" ind1="0" ind2=" ">
+    <subfield code="a">' + v.escape('xml') + '</subfield>'
++ forNonBlank(cells['GND-Nummer'].value.split('|').slice(1)[i].replace('$',''), gnd ,'
+    <subfield code="0">' + gnd.escape('xml') + '</subfield>', '')
++ forNonBlank(cells['Geburts- und Sterbedatum'].value.split('|').slice(1)[i].replace('$',''), geburt ,'
+    <subfield code="d">' + geburt.escape('xml') + '</subfield>', '')
++ '</datafield>')
+```
+
+Mein fertiges Template sieht dann so aus: 
+
+Prefix: 
+```
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+```
+
+```
+<record>
+<leader>     nab a22     uu 4500</leader>
+<controlfield tag="001">{{cells['URL'].value.replace('https://doaj.org/article/','').escape('xml')}}</controlfield>
+<datafield tag="022" ind1=" " ind2=" ">
+    <subfield code="a">{{cells['ISSNs'].value.escape('xml')}}</subfield>
+</datafield>{{
+forNonBlank(
+    cells['DOI'].value,
+    v,
+    '
+<datafield tag="024" ind1="7" ind2=" ">
+    <subfield code="a">' + v.escape('xml') + '</subfield>
+    <subfield code="2">doi</subfield>        
+</datafield>',
+    ''
+)
+}}
+<datafield tag="041" ind1=" " ind2=" ">
+    <subfield code="a">{{cells['Language'].value.escape('xml')}}</subfield>
+</datafield>
+<datafield tag="100" ind1="0" ind2=" ">
+    <subfield code="a">{{cells['Authors'].value.split('|')[0].escape('xml')}}</subfield>
+    <subfield code="0">{{cells['GND-Nummer'].value. escape('xml')}}</subfield>
+    <subfield code="c">{{cells['Beruf- oder Beschäftigung'].value. escape('xml')}}</subfield>
+    <subfield code="d">{{cells['Geburts- und Sterbedatum'].value. escape('xml')}}</subfield>
+</datafield>{{forNonBlank(cells["Title"].value.escape('xml'), v, '
+<datafield tag="245" ind1="0" ind2="0">
+    <subfield code="a">' + v + '</subfield>
+</datafield>', '')}}
+<datafield tag="260" ind1=" " ind2=" ">
+    <subfield code="b">{{forNonBlank(cells["Publisher"].value.escape('xml'), v, v, '')}}</subfield>
+</datafield>
+<datafield tag="264" ind1=" " ind2=" ">
+    <subfield code="b">{{cells["Publisher"].value.escape('xml')}}</subfield>
+</datafield>{{
+forEach(cells['Subjects'].value.split('|'), v ,'
+<datafield tag="650" ind1="0" ind2=" ">
+    <subfield code="a">' + v.escape('xml') + '</subfield>
+</datafield>')
+}}{{
+forEachIndex(cells['Authors'].value.split('|').slice(1), i, v ,'
+<datafield tag="700" ind1="0" ind2=" ">
+    <subfield code="a">' + v.escape('xml') + '</subfield>'
++ forNonBlank(cells['GND-Nummer'].value.split('|').slice(1)[i].replace('$',''), gnd ,'
+    <subfield code="0">' + gnd.escape('xml') + '</subfield>', '')
++ forNonBlank(cells['Geburts- und Sterbedatum'].value.split('|').slice(1)[i].replace('$',''), geburt ,'
+    <subfield code="d">' + geburt.escape('xml') + '</subfield>', '')
++ '</datafield>')
+}}
+</record>
+```
+
+```
+</collection>
+```
