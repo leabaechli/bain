@@ -44,7 +44,7 @@ Das muss aber jetzt noch mit den GND-Daten ergänzt werden. Meine beschränkten 
 
 Okay, versuchen wir's mal. Ich ergänze mein 100er Feld-Template und komme auf das: 
 
-![Template neu](https://raw.githubusercontent.com/leabaechli/bain/master/assets/images/OR_template_neu.png)
+![Template 100 neu](https://raw.githubusercontent.com/leabaechli/bain/master/assets/images/OR_100_2.png)
 
 
 Mit dem 100er-Feld ist das ja nicht getan, denn das 700er-Feld gibt's ja auch noch. Leider funktioniert das hier nicht ganz so einfach. Ich bin froh, dass ich die Übung erst nach dem Unterricht machen konnte, denn ich glaube nicht, dass ich das geschafft hätte (oder ich hätte SEHR viele Nerven verloren...) Es braucht nämlich in den leeren Zellen der neuen Spalten (von denen es viele gibt) einen Platzhalter, wie bspw. `$`. Dann müssen die neuen Spalten zusammengeführt werden. Beide Schritte sind mit OpenRefine ja recht schnell gemacht. Und dann kann das Template ergänzt werden: 
@@ -62,7 +62,7 @@ forEachIndex(cells['Authors'].value.split('|').slice(1), i, v ,'
 
 Mein fertiges Template sieht dann so aus: 
 
-![Template neu](https://raw.githubusercontent.com/leabaechli/bain/master/assets/images/OR_template2.png)
+![Template komplett neu](https://raw.githubusercontent.com/leabaechli/bain/master/assets/images/OR_template_neu.png)
 
 Und exportieren... fertig! 
 
