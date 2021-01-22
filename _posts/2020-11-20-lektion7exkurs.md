@@ -62,7 +62,7 @@ forEachIndex(cells['Authors'].value.split('|').slice(1), i, v ,'
 
 Mein fertiges Template sieht dann so aus: 
 
-![Template](https://raw.githubusercontent.com/leabaechli/bain/master/assets/images/OR_template2.png)
+![Template neu](https://raw.githubusercontent.com/leabaechli/bain/master/assets/images/OR_template2.png)
 
 Und exportieren... fertig! 
 
