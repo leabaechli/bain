@@ -4,9 +4,6 @@ date: 2020-09-10
 header:
   image: /assets/images/BAIN-0.png
   teaser: "/assets/images/BAIN-0.png"
-
-  
-
 ---
 Dieses Modul ist bei mir in diesem Semester das einzige, das rein online stattfindet. Das finde ich auch passend, immerhin geht es hier um Informatik! Und ehrlich gesagt ist es mir auch recht, wenn ich ein bisschen weniger auf Zürich reisen muss. Dafür gönne ich mir jeweils eine Kanne Tee zum Unterricht und kann so gemütlich Tee-schlürfend von zuhause aus am Unterricht teilnehmen. So lässt es sich doch ~~leben~~ lernen! 
 
