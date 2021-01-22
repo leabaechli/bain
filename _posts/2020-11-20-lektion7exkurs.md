@@ -66,4 +66,4 @@ Mein fertiges Template sieht dann so aus:
 
 Und exportieren... fertig! 
 
-Naja, viele meiner Subfelder sind leer. Was halt auch damit zusammenhängt, dass nicht überall Daten vorhanden waren. Aber trotzdem - die GND-Nummer ist quasi überall da, und das Prinzip habe ich verstanden. Exkurs: done!
+Naja, viele meiner Subfelder sind leer. Was halt auch damit zusammenhängt, dass nicht überall Daten vorhanden waren. Das c- und d-Feld fehlt auch bei den meisten Einträgen, da ist es kein Wunder, dass da dann in der XML-Datei nichts drin steht. Aber trotzdem - die GND-Nummer ist quasi überall da, und das Prinzip habe ich verstanden. Exkurs: done!
