@@ -35,7 +35,9 @@ Jetzt kommt der zweite Teil dieser Aufgabe, nämlich das Tempate entsprechend zu
 
 Ich nehme das bereit in der Stunde erstellte [Grundtemplate](https://pad.gwdg.de/qeGjv6aPShOSg4BMJgOjkg?both#Gesamtergebnis-Row-Template), das schon einiges mit sich bringt. 
 
-Dort haben wir z.B. für das 100er-Feld diese Angabe: 
+Dort haben wir z.B. für das 100er-Feld diese Angabe (als Bild, weil GitHub hier den Code nicht richtig anzeigen will... aus was für Gründen auch immer!)
+
+![Template1](https://raw.githubusercontent.com/leabaechli/bain/master/assets/images/OR_100_1.png)
 
 ```
 <datafield tag="100" ind1="0" ind2=" ">
@@ -47,6 +49,7 @@ Das muss aber jetzt noch mit den GND-Daten ergänzt werden. Meine beschränkten 
 
 Okay, versuchen wir's mal. Ich ergänze mein 100er Feld-Template und komme auf das: 
 
+![Template neu](https://raw.githubusercontent.com/leabaechli/bain/master/assets/images/OR_100_2.png)
 ```
 <datafield tag="100" ind1="0" ind2=" ">
     <subfield code="a">{{cells['Authors'].value.split('|')[0].escape('xml')}}</subfield>
