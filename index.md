@@ -17,7 +17,7 @@ Hier werde ich meine Erfahrungen im Kurs **Bibliotheks- und Archivinformatik** (
   * [IV: Funktion und Aufbau von Archivsystemen I](_posts/2020-10-09-lektion4.md)
   * [V: Funktion und Aufbau von Archivsystemen II, Repository-Software](_posts/2020-10-16-lektion5.md)
   * [VI: Metadaten modellieren und Schnittstellen nutzen I](_posts/2020-10-30-lektion6.md)
-  * [VII: Metadaten modellieren und Schnittstellen nutzen II](_posts/2020-11-20-lektion7.md) plus [Exkurs zu OpenRefine](_posts/2020-11-20-exkurs-lektion7.md)
+  * [VII: Metadaten modellieren und Schnittstellen nutzen II](_posts/2020-11-20-lektion7.md) plus [Exkurs zu OpenRefine](_posts/2020-11-20-lektion7exkurs.md)
   * [VIII: Metadaten modellieren und Schnittstellen nutzen III, Suchmaschinen und Discovery-Systeme I](_posts/2020-11-27-lektion8.md)
   * [IX: Suchmaschinen und Discovery-Systeme II](_posts/2020-12-11-lektion9.md)
   * [X: Linked Data](_posts/2020-12-18-lektion10.md)
