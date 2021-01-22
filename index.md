@@ -6,7 +6,7 @@ header:
 ---
 ## Herzlich willkommen zu meinem Lerntagebuch!
 
-Hier werde ich meine Erfahrungen im Kurs **Bibliotheks- und Archivinformatik** (kurz: BAIN) festhalten. Let's get this diary started!
+Hier werde ich meine Erfahrungen im Kurs **Bibliotheks- und Archivinformatik** (kurz: BAIN) festhalten. 
 
 ### Hier geht's zu den einzelnen Einträgen: 
 
@@ -20,8 +20,8 @@ Hier werde ich meine Erfahrungen im Kurs **Bibliotheks- und Archivinformatik** (
   * [VII: Metadaten modellieren und Schnittstellen nutzen II](_posts/2020-11-20-lektion7.md)
   * [VIII: Metadaten modellieren und Schnittstellen nutzen III, Suchmaschinen und Discovery-Systeme I](_posts/2020-11-27-lektion8.md)
   * [IX: Suchmaschinen und Discovery-Systeme II](_posts/2020-12-11-lektion9.md)
-  * Lektion X
-  * Abschluss
+  * [Lektion X](_posts/2020-12-18-lektion10.md)
+  * [Abschluss](_posts/2020-12-31-schluss.md)
 
 
 
